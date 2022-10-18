@@ -1,10 +1,13 @@
+import Header from "./Header";
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Weather App Coming Soon...</h1>
+      <main className="container">
+        <Header />
+      </main>
     </div>
   );
 }

@@ -1,0 +1,25 @@
+.Header {
+    padding-top: 10px;
+    font-size: 15px;
+  }
+  .Header button {
+    float: right;
+    border-radius: 50%;
+    border: solid 1px rgb(0, 153, 255);
+    background-color: rgba(0, 153, 255, 0.15);
+  }
+  .Header form {
+    display: block;
+    margin: auto;
+  }
+  .Header .searchBar {
+    border: solid 1px rgb(0, 153, 255);
+    border-radius: 4px;
+  }
+  .Header .searchButton {
+    background-color: rgba(0, 153, 255, 0.15);
+    border: solid 1px rgb(0, 153, 255);
+    margin-left: 1px;
+    border-radius: 4px;
+  }
+  
