@@ -10,6 +10,11 @@ function App() {
         <Header />
         <TodaysWeather />
       </main>
+      <footer>
+        <span>
+          <a href="https://github.com/MelanieMayne/weather-react-app" target="_blank" rel="noreferrer">Open-Source Code</a> by Melanie Richardson
+        </span>
+      </footer>
     </div>
   );
 }
