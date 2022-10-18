@@ -1,0 +1,25 @@
+.TodaysWeather {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+  }
+  .TodaysWeather ul li {
+    list-style: none;
+  }
+  .TodaysWeather .mainWeatherIcon {
+    font-size: 40px;
+  }
+  .TodaysWeather .dateAndTime {
+    font-size: 12px;
+  }
+  .TodaysWeather .highAndLow {
+    font-size: 12px;
+  }
+  .TodaysWeather .localeAndTemp {
+    font-size: 20px;
+    color: #0099ff;
+  }
+  .TodaysWeather .extraForecastInfo {
+    font-size: 12px;
+    padding-top: 3px;
+  }
