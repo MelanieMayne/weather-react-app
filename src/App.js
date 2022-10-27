@@ -1,22 +1,20 @@
-import Header from "./Header";
-import TodaysWeather from "./TodaysWeather";
+import CurrentWeather from "./CurrentWeather";
+import image from "./images/galaxy2.jpeg";
 
-import './App.css';
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <main className="container">
-        <Header />
-        <TodaysWeather />
-      </main>
-      <footer>
-        <span>
-          <a href="https://github.com/MelanieMayne/weather-react-app" target="_blank" rel="noreferrer">Open-Source Code</a> by Melanie Richardson
-        </span>
-      </footer>
+      <div
+        style={{
+          backgroundImage: `url(${image})`,
+          backgroundRepeat: "no-repeat"
+        }}
+        class="container main-container"
+      >
+        <CurrentWeather />
+      </div>
     </div>
   );
 }
-
-export default App;

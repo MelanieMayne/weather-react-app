@@ -1,20 +1,21 @@
-.App {
-  font-family: "Arimo", sans-serif;
-  text-align: center;
-  margin: 10px;
+:root {
+  --default-text-color: #2a3d66;
+  --background-color: rgba(215, 137, 215, 0.9);
+  --main-color: #9d65c9;
+  --secondary-color: #f7e8f6;
+  --heading-font: font-family: 'Eczar', serif;
+  --default-font: font-family: 'Fira Mono', monospace; 
 }
-.App .container {
+.App {
+  text-align: center;
+  max-width: 700px;
   display: block;
   margin: auto;
-  max-width: 800px;
-  border: solid 1px rgb(0, 153, 255);
-  border-radius: 4px;
-  background: linear-gradient(
-    180deg,
-    rgb(255, 255, 255) 25%,
-    rgb(0, 153, 255) 100%
-  );
 }
-.App a {
-  color:  #0099ff;;
+.App .main-container {
+  border: solid 1px var(--default-text-color);
+  border-radius: 4px;
+  font-family: var(--default-font);
+  background-image: url(./images/galaxy2.jpeg);
+  margin: 10px;
 }
