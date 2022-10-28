@@ -1,5 +1,7 @@
 import React from "react";
 
+
+import 'bootstrap/dist/css/bootstrap.css';
 import "./CurrentWeather.css";
 import image from "./images/sun.png";
 

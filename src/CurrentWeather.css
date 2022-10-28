@@ -35,8 +35,8 @@
   background-color: var(--background-color);
   border-radius: 4px;
   text-align: center;
-  display: flex;
-  margin: 15px;
+  display: block;
+  margin: 15px auto;
   padding: 10px;
 }
 .CurrentWeather ul li {
