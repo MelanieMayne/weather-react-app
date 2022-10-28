@@ -13,7 +13,7 @@ export default function App() {
         }}
         class="container main-container"
       >
-        <CurrentWeather />
+        <CurrentWeather city="Long Beach"/>
       </div>
     </div>
   );

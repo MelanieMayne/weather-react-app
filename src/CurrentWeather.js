@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
-
-import 'bootstrap/dist/css/bootstrap.css';
 import "./CurrentWeather.css";
 import image from "./images/sun.png";
 
-export default function CurrentWeather() {
-  return (
+export default function CurrentWeather(props) {
+  const [weatherData, setWeatherData] = useState({ ready: false });
+  
+  function handleResponse(response) {
+  setWeatherData({
+    ready: true,
+    temperature: response.data.temperature.current,
+    humidity: response.data.temperature.humidity,
+    wind: response.data.wind.speed,
+    description: response.data.condition.description,
+    city: response.data.city,
+  });
+  }
+
+  if (weatherData.ready) {
+    return (
     <div className="CurrentWeather">
       <div className="Header">
         <header className="container">
@@ -36,21 +49,27 @@ export default function CurrentWeather() {
           </div>
           <div className="col-6">
             <ul>
-              <li className="date-and-time">September 21st, 2022 | 09:46</li>
               <li className="locale-and-temp">
-                Long Beach, <small>CA</small> 71°F
+                {weatherData.city} {Math.round(weatherData.temperature)}°F
               </li>
-              <li className="high-and-low">H: 80° | L: 60°</li>
+              <li className="date-and-time">September 21st, 2022 | 09:46</li>
             </ul>
           </div>
           <div className="col-3">
             <ul className="extra-weather">
-              <li>Humidity: 30%</li>
-              <li>Wind: 7 mph</li>
+              <li>Humidity: {weatherData.humidity}%</li>
+              <li>Wind: {Math.round(weatherData.wind)} mph</li>
+              <li className="text-capitalize">{weatherData.description}</li>
             </ul>
           </div>
         </div>
       </main>
     </div>
   );
+} else {
+  const apiKey = "440461d4fbdf3d442aeb4ff32t4abo8a";
+  const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.city}&key=${apiKey}&units=imperial`
+  axios.get(apiUrl).then(handleResponse);
+  return <div>Loading...</div>
+}
 }
