@@ -7,6 +7,13 @@ import image from "./images/sun.png";
 export default function CurrentWeather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+  function handleChangeCity(event) {
+    console.log(event.target.value);
+  }
+
   function handleResponse(response) {
   setWeatherData({
     ready: true,
@@ -24,12 +31,13 @@ export default function CurrentWeather(props) {
       <div className="Header">
         <header className="container">
           <button className="temp-unit-button">°F</button>
-          <form>
+          <form onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="Enter a City"
               autoComplete="off"
               className="search-bar"
+              onChange={handleChangeCity}
             />
             <input type="submit" value="Search" className="search-button" />
           </form>
