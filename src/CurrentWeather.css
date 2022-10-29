@@ -1,65 +1,40 @@
 :root {
-  --default-text-color: #2a3d66;
-  --background-color: rgba(215, 137, 215, 0.9);
-  --main-color: #9d65c9;
-  --secondary-color: #f7e8f6;
-  --heading-font: font-family: 'Eczar', serif;
-  --default-font: font-family: 'Fira Mono', monospace; 
-}
-.CurrentWeather Header {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-.CurrentWeather form {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 4px;
-}
-.CurrentWeather button {
-  border: solid 1px var(--default-text-color);
-  border-radius: 50%;
-  background-color: var(--background-color);
-  color: var(--default-text-color);
-}
-.CurrentWeather .search-bar::placeholder {
-  color: var(--main-color);
-}
-.CurrentWeather .search-button {
+    --default-text-color: #2a3d66;
+    --background-color: rgba(215, 137, 215, 0.9);
+    --main-color: #9d65c9;
+    --secondary-color: #f7e8f6;
+    --heading-font: font-family: 'Eczar', serif;
+    --default-font: font-family: 'Fira Mono', monospace; 
+  }
+  .CurrentWeather main {
     background-color: var(--background-color);
-    color: var(--default-text-color);
-    border: solid 1px var(--default-text-color);
     border-radius: 4px;
-}
-.CurrentWeather main {
-  background-color: var(--background-color);
-  border-radius: 4px;
-  text-align: center;
-  display: block;
-  margin: 15px auto;
-  padding: 10px;
-}
-.CurrentWeather ul li {
-  list-style: none;
-  line-height: 2;
-  color: var(--default-text-color);
-}
-.CurrentWeather .weather-icon {
-  display: block;
-  margin: auto;
-  width: 80px;
-  padding-top: 10px;
-}
-.CurrentWeather .date-and-time {
-  font-size: 13px;
-}
-.CurrentWeather .locale-and-temp {
-  font-size: 24px;
-  color: var(--main-color);
-  font-family: var(--heading-font);
-}
-.CurrentWeather .extra-weather {
-  padding-top: 12px;
-  font-size: 11px;
-  text-align: left;
-}
+    text-align: center;
+    display: block;
+    margin: 15px auto;
+    padding: 10px;
+  }
+  .CurrentWeather ul li {
+    list-style: none;
+    line-height: 2;
+    color: var(--default-text-color);
+  }
+  .CurrentWeather .weather-icon {
+    display: block;
+    margin: auto;
+    width: 80px;
+    padding-top: 10px;
+  }
+  .CurrentWeather .date-and-time {
+    font-size: 13px;
+  }
+  .CurrentWeather .locale-and-temp {
+    font-size: 24px;
+    color: var(--main-color);
+    font-family: var(--heading-font);
+  }
+  .CurrentWeather .extra-weather {
+    padding-top: 12px;
+    font-size: 11px;
+    text-align: left;
+  }

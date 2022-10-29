@@ -1,0 +1,33 @@
+:root {
+  --default-text-color: #2a3d66;
+  --background-color: rgba(215, 137, 215, 0.9);
+  --main-color: #9d65c9;
+  --secondary-color: #f7e8f6;
+  --heading-font: font-family: 'Eczar', serif;
+  --default-font: font-family: 'Fira Mono', monospace; 
+}
+.SearchEngine Header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.SearchEngine form {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+}
+.SearchEngine button {
+  border: solid 1px var(--default-text-color);
+  border-radius: 50%;
+  background-color: var(--background-color);
+  color: var(--default-text-color);
+}
+.SearchEngine .search-bar::placeholder {
+  color: var(--main-color);
+}
+.SearchEngine .search-button {
+    background-color: var(--background-color);
+    color: var(--default-text-color);
+    border: solid 1px var(--default-text-color);
+    border-radius: 4px;
+}

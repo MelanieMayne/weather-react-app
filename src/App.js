@@ -1,4 +1,4 @@
-import CurrentWeather from "./CurrentWeather";
+import SearchEngine from "./SearchEngine";
 import image from "./images/galaxy2.jpeg";
 
 import "./App.css";
@@ -13,7 +13,7 @@ export default function App() {
         }}
         class="container main-container"
       >
-        <CurrentWeather city="Long Beach"/>
+        <SearchEngine city="Long Beach"/>
       </div>
     </div>
   );
