@@ -50,20 +50,16 @@
   width: 80px;
   padding-top: 10px;
 }
-.CurrentWeather .date-and-time,
-.high-and-low {
-  font-size: 12px;
+.CurrentWeather .date-and-time {
+  font-size: 13px;
 }
 .CurrentWeather .locale-and-temp {
-  font-size: 20px;
+  font-size: 24px;
   color: var(--main-color);
   font-family: var(--heading-font);
 }
 .CurrentWeather .extra-weather {
-  padding-top: 20px;
-  font-size: 10px;
+  padding-top: 12px;
+  font-size: 11px;
   text-align: left;
-}
-.CurrentWeather .locale-and-temp small {
-  font-size: 14px;
 }
