@@ -22,7 +22,7 @@ export default function SearchEngine(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    search(city);
+    search();
   }
 
   function handleChangeCity(event) {
@@ -31,7 +31,7 @@ export default function SearchEngine(props) {
 
   function search() {
     const apiKey = "440461d4fbdf3d442aeb4ff32t4abo8a";
-    const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.city}&key=${apiKey}&units=imperial`
+    const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`
     axios.get(apiUrl).then(handleResponse);
   }
 
