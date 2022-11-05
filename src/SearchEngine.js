@@ -41,7 +41,6 @@ export default function SearchEngine(props) {
     <div className="SearchEngine">
       <div className="Header">
         <header className="container">
-          <button className="temp-unit-button">°F</button>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
@@ -52,9 +51,6 @@ export default function SearchEngine(props) {
             />
             <input type="submit" value="Search" className="search-button" onSubmit={handleSubmit}/>
           </form>
-          <button className="geo-locale-button">
-            <i className="bi bi-geo-alt-fill"></i>
-          </button>
         </header>
       </div>
       <CurrentWeather data = {weatherData}/>

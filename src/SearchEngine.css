@@ -7,20 +7,12 @@
   --default-font: 'Fira Mono', monospace; 
 }
 .SearchEngine Header {
-  display: flex;
-  justify-content: space-between;
   margin: 10px;
 }
 .SearchEngine form {
-  display: inline-flex;
-  align-items: center;
+  display: block;
+  margin: auto;
   border-radius: 4px;
-}
-.SearchEngine button {
-  border: solid 1px var(--default-text-color);
-  border-radius: 50%;
-  background-color: var(--background-color);
-  color: var(--default-text-color);
 }
 .SearchEngine .search-bar::placeholder {
   color: var(--main-color);
