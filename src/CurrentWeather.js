@@ -10,7 +10,7 @@ export default function CurrentWeather(props) {
         <main className="container">
         <div className="row">
           <div className="col-3">
-            <WeatherIcon icon={props.data.icon}/>
+            <WeatherIcon icon={props.data.icon} size={70}/>
           </div>
           <div className="col-6">
             <ul>

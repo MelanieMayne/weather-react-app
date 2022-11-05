@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CurrentWeather from "./CurrentWeather";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 
 import "./SearchEngine.css";
@@ -54,6 +55,7 @@ export default function SearchEngine(props) {
         </header>
       </div>
       <CurrentWeather data = {weatherData}/>
+      <WeatherForecast />
     </div>
   );
 } else {
