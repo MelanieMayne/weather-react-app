@@ -1,19 +1,15 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
-import image from "./images/sun.png";
 
 import "./CurrentWeather.css";
+import WeatherIcon from "./WeatherIcon";
 
 export default function CurrentWeather(props) {
     return <div className="CurrentWeather">
         <main className="container">
         <div className="row">
           <div className="col-3">
-            <img
-              src={image}
-              alt="Weather Icon"
-              className="img-fluid weather-icon"
-            />
+            <WeatherIcon icon={props.data.icon}/>
           </div>
           <div className="col-6">
             <ul>

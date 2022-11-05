@@ -19,12 +19,6 @@
     line-height: 2;
     color: var(--default-text-color);
   }
-  .CurrentWeather .weather-icon {
-    display: block;
-    margin: auto;
-    width: 80px;
-    padding-top: 10px;
-  }
   .CurrentWeather .date-and-time {
     font-size: 13px;
   }

@@ -17,6 +17,7 @@ export default function SearchEngine(props) {
       description: response.data.condition.description,
       city: response.data.city,
       date: new Date(response.data.time * 1000),
+      icon: response.data.condition.icon,
     });
     }
 
