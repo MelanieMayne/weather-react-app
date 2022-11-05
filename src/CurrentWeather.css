@@ -27,6 +27,7 @@
     color: var(--main-color);
     font-family: var(--heading-font);
   }
+
   .CurrentWeather .extra-weather {
     padding-top: 12px;
     font-size: 11px;
