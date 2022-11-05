@@ -1,20 +1,27 @@
-import React from "react";
-import WeatherIcon from "./WeatherIcon";
+import React, { useState } from "react";
+import FormatForecastData from "./FormatForecastData";
+import axios from "axios";
 
 import "./WeatherForecast.css";
 
 export default function WeatherForecast() {
-    return (
-        <div className="WeatherForecast">
-            <div className="row">
-                <div className="col">
-                    <ul>
-                        <li className="day">Sunday</li>
-                        <li><WeatherIcon icon="few-clouds-day" size={40}/></li>
-                        <li className="high-low-temp">H: 69° | L: 50°</li>
-                    </ul>
-                </div>
-            </div>        
-        </div>
-    );
+    const [ready, setReady] = useState(false);
+    const [forecast, setForecast] = useState("");
+
+    function handleResponse(response) {
+        setForecast(response.data.daily);
+        setReady(true);
+    }
+    if(ready) {
+        return (
+           <FormatForecastData forecastData={forecast[1]}/>
+        );
+    } else {
+        let apiKey = "440461d4fbdf3d442aeb4ff32t4abo8a";
+        let city = "Long Beach";
+        let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`
+    
+        axios.get(apiUrl).then(handleResponse);
+        return null;
+  } 
 }
