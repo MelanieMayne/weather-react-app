@@ -23,7 +23,7 @@
     font-size: 13px;
   }
   .CurrentWeather .locale-and-temp {
-    font-size: 26px;
+    font-size: 28px;
     color: var(--main-color);
     font-family: var(--heading-font);
   }
