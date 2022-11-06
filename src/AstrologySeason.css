@@ -1,0 +1,28 @@
+:root {
+  --default-text-color: #2a3d66;
+  --background-color: rgba(215, 137, 215, 0.9);
+  --main-color: #9d65c9;
+  --secondary-color: #f7e8f6;
+  --heading-font: 'Eczar', serif;
+  --default-font: 'Fira Mono', monospace; 
+}
+.AstrologySeason .astro-banner {
+    background-color: var(--background-color);
+    border-radius: 4px;
+    display: flex;
+    padding: 5px;
+    max-height: 50px;
+}
+.AstrologySeason .zodiac-icon {
+    max-width: 45px;
+    display: inline-block;
+}
+.AstrologySeason p {
+  font-size: 25px;
+  color: var(--main-color);
+  display: flex;
+}
+.AstrologySeason .right-side {
+  transform: scaleX(-1);
+  display: inline-flex;
+}

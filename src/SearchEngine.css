@@ -7,11 +7,14 @@
   --default-font: 'Fira Mono', monospace; 
 }
 .SearchEngine Header {
-  margin: 10px;
+  margin: 15px 0;
+  padding: none;
+  display: flex;
+  justify-content: space-between;
+  max-height: 50px;
 }
 .SearchEngine form {
-  display: block;
-  margin: auto;
+  display: flex;
   border-radius: 4px;
 }
 .SearchEngine .search-bar::placeholder {

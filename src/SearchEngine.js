@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AstrologySeason from "./AstrologySeason";
 import CurrentWeather from "./CurrentWeather";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
@@ -52,6 +53,7 @@ export default function SearchEngine(props) {
             />
             <input type="submit" value="Search" className="search-button" onSubmit={handleSubmit}/>
           </form>
+          <AstrologySeason month={11} day={6}/>
         </header>
       </div>
       <CurrentWeather data = {weatherData}/>
