@@ -5,13 +5,14 @@ import zodiacimage from "./images/scorpio.png";
 import "./AstrologySeason.css";
 
 export default function AstrologySeason(props) { 
-    const month = props.month;
-    const day = props.day;
+    let months = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
+    let month = months[props.date.getMonth()];
+    let day = props.date.getDate();
     const [season, setSeason] = useState("");
     const [ready, setReady] = useState(false);
-
+  
     function seasonChange() {
-        setSeason(sunSign(month,day).sign);
+        setSeason(sunSign(month, day).sign);
         setReady(true);
     }
 
@@ -24,7 +25,7 @@ export default function AstrologySeason(props) {
                         alt="libra"
                         className="img-fluid zodiac-icon"
                     />
-                    <p className="text-capitalize">{season} Season</p>
+                    <p className="text-capitalize season-title">{season} Season</p>
                     <img
                         src={zodiacimage}
                         alt="libra"

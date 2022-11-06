@@ -53,7 +53,7 @@ export default function SearchEngine(props) {
             />
             <input type="submit" value="Search" className="search-button" onSubmit={handleSubmit}/>
           </form>
-          <AstrologySeason month={11} day={6}/>
+          <AstrologySeason date= {weatherData.date}/>
         </header>
       </div>
       <CurrentWeather data = {weatherData}/>
