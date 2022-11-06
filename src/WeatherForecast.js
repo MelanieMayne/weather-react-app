@@ -11,6 +11,7 @@ export default function WeatherForecast(props) {
     useEffect(() => {
         setReady(false)
     }, [props.city]);
+
     function handleResponse(response) {
         setForecast(response.data.daily);
         setReady(true);
@@ -27,6 +28,8 @@ export default function WeatherForecast(props) {
                                         <FormatForecastData forecastData={dailyForecast}/>
                                     </div>           
                                     );
+                                } else {
+                                    return null;
                                 }
                             }        
                         }
