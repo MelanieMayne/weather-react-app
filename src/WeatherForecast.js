@@ -14,7 +14,22 @@ export default function WeatherForecast() {
     }
     if(ready) {
         return (
-           <FormatForecastData forecastData={forecast[1]}/>
+            <div className="WeatherForecast">
+                <div className="row">
+                    {forecast.map(function (dailyForecast, index) {
+                        if (index !== 0) {
+                            if (index <=5) {
+                                return (
+                                    <div className="col" key={index}>
+                                        <FormatForecastData forecastData={dailyForecast}/>
+                                    </div>           
+                                    );
+                                }
+                            }        
+                        }
+                    ,)}    
+                </div>
+            </div>        
         );
     } else {
         let apiKey = "440461d4fbdf3d442aeb4ff32t4abo8a";
@@ -23,5 +38,5 @@ export default function WeatherForecast() {
     
         axios.get(apiUrl).then(handleResponse);
         return null;
-  } 
+    } 
 }

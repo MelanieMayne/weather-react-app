@@ -23,7 +23,7 @@ export default function FormatForecastData(props) {
                         <ul>
                             <li className="day">{day()}</li>
                             <li><WeatherIcon icon={props.forecastData.condition.icon} size={40}/></li>
-                            <li className="high-low-temp">H: {maxTemp()} | L: {minTemp()}</li>
+                            <li className="high-low-temp">H:{maxTemp()} | L:{minTemp()}</li>
                         </ul>
                     </div>
                 </div>        
