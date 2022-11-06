@@ -55,7 +55,7 @@ export default function SearchEngine(props) {
         </header>
       </div>
       <CurrentWeather data = {weatherData}/>
-      <WeatherForecast />
+      <WeatherForecast city = {weatherData.city}/>
     </div>
   );
 } else {

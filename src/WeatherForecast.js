@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FormatForecastData from "./FormatForecastData";
 import axios from "axios";
 
 import "./WeatherForecast.css";
 
-export default function WeatherForecast() {
+export default function WeatherForecast(props) {
     const [ready, setReady] = useState(false);
     const [forecast, setForecast] = useState("");
 
+    useEffect(() => {
+        setReady(false)
+    }, [props.city]);
     function handleResponse(response) {
         setForecast(response.data.daily);
         setReady(true);
@@ -33,7 +36,7 @@ export default function WeatherForecast() {
         );
     } else {
         let apiKey = "440461d4fbdf3d442aeb4ff32t4abo8a";
-        let city = "Long Beach";
+        let city = props.city;
         let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`
     
         axios.get(apiUrl).then(handleResponse);
