@@ -19,3 +19,12 @@
   background-image: url(./images/galaxy2.jpeg);
   margin: 10px;
 }
+.App p {
+  font-family: var(--default-font);
+  font-size: 13px;
+  color: var(--default-text-color);
+}
+.App a {
+  text-decoration: none;
+  color: var(--main-color);
+}
