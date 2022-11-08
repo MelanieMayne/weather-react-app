@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import AstrologyImage from "./AstrologyImage";
 import sunSign from "sun-sign";
-import zodiacimage from "./images/scorpio.png";
 
 import "./AstrologySeason.css";
 
