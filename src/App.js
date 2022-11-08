@@ -17,6 +17,12 @@ export default function App() {
       </div>
       <footer>
         <p>This project was coded by <a href="https://cosmic-daffodil-494003.netlify.app/" target="_blank" rel="noreferrer">Melanie Richardson</a> and is <a href="https://github.com/MelanieMayne/My-Portfolio-Project" target="_blank" rel="noreferrer">open-sourced on GitHub</a> and <a href="https://app.netlify.com/sites/cosmic-daffodil-494003/overview" target="_blank" rel="noreferrer">hosted on Netlify</a></p>
+        <p>Astrology icons created by <a
+          href="https://www.flaticon.com/free-icons/zodiac"
+          title="zodiac icons"
+        >
+          Monkik - Flaticon
+        </a></p>
       </footer>
     </div>
   );

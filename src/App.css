@@ -23,6 +23,9 @@
   font-family: var(--default-font);
   font-size: 13px;
   color: var(--default-text-color);
+  text-align: left;
+  line-height: 1;
+  margin: 10px;
 }
 .App a {
   text-decoration: none;
