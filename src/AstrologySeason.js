@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AstrologyImage from "./AstrologyImage";
 import sunSign from "sun-sign";
 import zodiacimage from "./images/scorpio.png";
 
@@ -20,17 +21,8 @@ export default function AstrologySeason(props) {
         return (
             <div className="AstrologySeason">
                 <span className="astro-banner container">
-                    <img
-                        src={zodiacimage}
-                        alt="libra"
-                        className="img-fluid zodiac-icon"
-                    />
+                    <AstrologyImage season={season}/>
                     <p className="text-capitalize season-title">{season} Season</p>
-                    <img
-                        src={zodiacimage}
-                        alt="libra"
-                        className="img-fluid zodiac-icon right-side"
-                    />
                 </span>
             </div>
         )

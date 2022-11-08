@@ -21,8 +21,5 @@
   font-size: 25px;
   color: var(--main-color);
   display: flex;
-}
-.AstrologySeason .right-side {
-  transform: scaleX(-1);
-  display: inline-flex;
+  margin-left: 2px;
 }
