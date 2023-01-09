@@ -1,6 +1,5 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
-import TempConversion from "./TempConversion";
 
 import "./CurrentWeather.css";
 import WeatherIcon from "./WeatherIcon";
@@ -15,7 +14,7 @@ export default function CurrentWeather(props) {
           <div className="col-6">
             <ul>
               <li className="locale-and-temp">
-                <span>{props.data.city}<TempConversion fahrenheit={props.data.temperature}/></span>
+                <span>{props.data.city} {Math.round(props.data.temperature)}°<span className="unit">F</span></span>
               </li>
               <li className="date-and-time">
                 <FormattedDate date={props.data.date}/>
