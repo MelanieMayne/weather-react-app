@@ -8,10 +8,10 @@ export default function CurrentWeather(props) {
     return <div className="CurrentWeather">
         <main className="container">
         <div className="row">
-          <div className="col-3">
+          <div className="col-md-3">
             <WeatherIcon icon={props.data.icon} size={70}/>
           </div>
-          <div className="col-6">
+          <div className="col-md-9 col-lg-6">
             <ul>
               <li className="locale-and-temp">
                 <span>{props.data.city} {Math.round(props.data.temperature)}°<span className="unit">F</span></span>
@@ -21,7 +21,7 @@ export default function CurrentWeather(props) {
               </li>
             </ul>
           </div>
-          <div className="col-3">
+          <div className="col-md-3">
             <ul className="extra-weather">
               <li>Humidity: {props.data.humidity}%</li>
               <li>Wind: {Math.round(props.data.wind)} mph</li>

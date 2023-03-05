@@ -33,9 +33,13 @@
     top: -7px;
 
   }
-
   .CurrentWeather .extra-weather {
     padding-top: 12px;
     font-size: 11px;
     text-align: left;
+  }
+  @media (max-width:767px) {
+    .CurrentWeather .extra-weather{
+      display: none;
+    }
   }

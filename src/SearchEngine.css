@@ -26,3 +26,13 @@
     border: solid 1px var(--default-text-color);
     border-radius: 4px;
 }
+@media (max-width: 767px) {
+  .SearchEngine Header {
+    display: block;
+    max-height: fit-content;
+  }
+  .SearchEngine form {
+    justify-content: center;
+    margin: 10px 0;
+  }
+}

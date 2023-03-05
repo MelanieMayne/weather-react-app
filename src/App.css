@@ -17,6 +17,8 @@
   border-radius: 4px;
   font-family: var(--default-font);
   background-image: url(./images/galaxy2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 10px;
 }
 .App p {
@@ -30,4 +32,11 @@
 .App a {
   text-decoration: none;
   color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+  .App {
+    max-width: 350px;
+  }
+  
 }
